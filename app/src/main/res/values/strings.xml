@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">SportStatistics</string>
+
     <string name="ma_go_button_text">Go to second activity</string>
+    <string name="ma_hello">Hello</string>
+    <string name="ma_go_activity">Go to second Activity</string>
+    <string name="ma_world">World</string>
+    <string name="ma_hello_world">Hello World</string>
+
+    <string name="sa_second_activity">Second Activity</string>
+    <string name="sa_go_back">go back</string>
+    <string name="sa_go_to_third">go to third</string>
+
+    <string name="ta_go_back">Go Back</string>
 </resources>
