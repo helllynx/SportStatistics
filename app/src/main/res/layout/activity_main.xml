@@ -1,21 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+<!-- Левый constraint view_1 привязан к левой стороне ConstraintLayout.
+       Верхний constraint view_1 — к верхней стороне ConstraintLayout.
+       Правый и нижний constraint не привязаны -->
+<TextView
+    android:id="@+id/view_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="24sp"
+    android:text="@string/ma_hello"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
 
-    <Button
-        android:id="@+id/am_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Go to second Activity" />
+<!-- Левый constraint у view_2 привязан к правой стороне view_1.
+       Constraint базовой линии view_2 — к базовой линии view_1.
+       Нижний и верхний constraint привязывать нельзя, так как есть привязка по базовой линии.
+       Правый constraint не привязан. -->
+<Button
+    android:id="@+id/am_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/ma_go_activity"
+    app:layout_constraintLeft_toRightOf="@id/view_1"
+    app:layout_constraintBaseline_toBaselineOf="@id/view_1"/>
 
-</LinearLayout>
+<!-- Левый constraint view_3 привязан к правой стороне view_1.
+       Верхний constraint view_3 — к нижней стороне am_button.
+       Правый и нижний constraint не привязаны. -->
+<TextView
+    android:id="@+id/view_3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/ma_world"
+    android:textSize="14sp"
+    app:layout_constraintTop_toBottomOf="@id/am_button"
+    app:layout_constraintLeft_toRightOf="@id/view_1"/>
+
+<!-- Левый constraint view_4 привязан к правой стороне view_2.
+       Нижний constraint view_4 — к нижней стороне view_2.
+       Правый и верхний constraint не привязаны. -->
+<TextView
+    android:id="@+id/view_4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/ma_hello_world"
+    android:textSize="18sp"
+    app:layout_constraintBottom_toBottomOf="@id/view_1"
+    app:layout_constraintLeft_toRightOf="@id/am_button"
+    app:layout_constraintRight_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
