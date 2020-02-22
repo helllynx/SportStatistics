@@ -1,0 +1,38 @@
+package com.sports.sportstatistics.main
+
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.findNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.sports.sportstatistics.R
+
+class MainActivity : AppCompatActivity(R.layout.activity_main) {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        val navController = findNavController(R.id.am_nav_host_fragment).apply {
+            addOnDestinationChangedListener { _, destination, _ ->
+                title = destination.label
+            }
+        }
+
+        findViewById<BottomNavigationView>(R.id.am_navigation).setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.menu_home -> {
+                    navController.navigate(R.id.action_global_homeFragment)
+                    true
+                }
+                R.id.menu_info -> {
+                    navController.navigate(R.id.action_global_infoFragment)
+                    true
+                }
+                R.id.menu_settings -> {
+                    navController.navigate(R.id.action_global_settingsFragment)
+                    true
+                }
+                else -> false
+            }
+        }
+    }
+}

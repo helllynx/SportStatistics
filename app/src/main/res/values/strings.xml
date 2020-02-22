@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">SportStatistics</string>
 
+    <string name="mm_general">General</string>
+    <string name="mm_info">Info</string>
+    <string name="mm_settings">Settings</string>
+
     <string name="ma_go_button_text">Go to second activity</string>
     <string name="ma_hello">Hello</string>
     <string name="ma_go_activity">Go to second Activity</string>
@@ -9,7 +13,14 @@
 
     <string name="sa_second_activity">Second Activity</string>
     <string name="sa_go_back">go back</string>
+    <string name="sa_go_end_fragment">go to end</string>
+    <string name="sa_start_dest_title">Start Dest Fragment</string>
+    <string name="sa_end_dest_title">End Dest Fragment</string>
+
     <string name="sa_go_to_third">go to third</string>
 
     <string name="ta_go_back">Go Back</string>
+    <string name="home_fragment_title">Home Fragment</string>
+    <string name="info_fragment_title">Info Fragment</string>
+    <string name="settings_fragment_title">Settings Fragment</string>
 </resources>
