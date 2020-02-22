@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/startDestFragment"
-        android:name="com.sports.sportstatistics.second.StartDestFragment"
+        android:name="com.sports.sportstatistics.second.start.StartDestFragment"
         android:label="StartDestFregment">
         <action
             android:id="@+id/action_startDestFragment_to_endDestFragment"
@@ -15,7 +15,7 @@
 
     <fragment
         android:id="@+id/endDestFragment"
-        android:name="com.sports.sportstatistics.second.EndDestFragment"
+        android:name="com.sports.sportstatistics.second.end.EndDestFragment"
         android:label="EndDestFragment" />
 
 </navigation>

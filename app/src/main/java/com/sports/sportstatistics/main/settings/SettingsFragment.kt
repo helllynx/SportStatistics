@@ -1,4 +1,4 @@
-package com.sports.sportstatistics.main
+package com.sports.sportstatistics.main.settings
 
 import android.os.Bundle
 import android.view.View
