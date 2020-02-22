@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/second"
+    app:startDestination="@id/startDestFragment">
+
+    <fragment
+        android:id="@+id/startDestFragment"
+        android:name="com.sports.sportstatistics.second.StartDestFragment"
+        android:label="StartDestFregment">
+        <action
+            android:id="@+id/action_startDestFragment_to_endDestFragment"
+            app:destination="@id/endDestFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/endDestFragment"
+        android:name="com.sports.sportstatistics.second.EndDestFragment"
+        android:label="EndDestFragment" />
+
+</navigation>
