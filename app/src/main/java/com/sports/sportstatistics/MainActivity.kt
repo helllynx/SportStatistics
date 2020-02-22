@@ -16,15 +16,15 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         navigation.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.menu_home -> {
-//                    navController.navigate(R.id.action_global_home)
+                    navController.navigate(R.id.action_global_homeFragment)
                     true
                 }
                 R.id.menu_info -> {
-//                    navController.navigate(R.id.action_global_transactions)
+                    navController.navigate(R.id.action_global_infoFragment)
                     true
                 }
                 R.id.menu_settings -> {
-//                    navController.navigate(R.id.action_global_settings)
+                    navController.navigate(R.id.action_global_settingsFragment)
                     true
                 }
                 else -> false
