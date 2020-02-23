@@ -1,4 +1,4 @@
-package com.sports.sportstatistics.third
+package com.sports.sportstatistics.ui.third
 
 import android.os.Bundle
 import android.widget.Button

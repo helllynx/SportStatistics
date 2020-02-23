@@ -1,4 +1,4 @@
-package com.sports.sportstatistics.main.info
+package com.sports.sportstatistics.ui.main.info
 
 import android.os.Bundle
 import android.view.View

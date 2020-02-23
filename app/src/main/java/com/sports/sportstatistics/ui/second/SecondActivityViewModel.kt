@@ -1,4 +1,4 @@
-package com.sports.sportstatistics.second
+package com.sports.sportstatistics.ui.second
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

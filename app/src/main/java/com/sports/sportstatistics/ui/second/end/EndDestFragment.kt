@@ -1,4 +1,4 @@
-package com.sports.sportstatistics.second.end
+package com.sports.sportstatistics.ui.second.end
 
 import android.os.Bundle
 import android.view.View
