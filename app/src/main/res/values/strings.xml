@@ -5,11 +5,14 @@
     <string name="mm_info">Info</string>
     <string name="mm_settings">Settings</string>
 
-    <string name="ma_go_button_text">Go to second activity</string>
-    <string name="ma_hello">Hello</string>
     <string name="ma_go_activity">Go to second Activity</string>
-    <string name="ma_world">World</string>
-    <string name="ma_hello_world">Hello World</string>
+    <string name="ma_name">Name</string>
+    <string name="ma_age">Age</string>
+    <string name="ma_height">Height</string>
+    <string name="ma_weight">Weight</string>
+    <string name="ma_sport_type">Sport Type</string>
+    <string name="ma_add_athlete">Add Athlete</string>
+    <string name="ma_toast_success">Add Successful</string>
 
     <string name="sa_second_activity">Second Activity</string>
     <string name="sa_go_back">go back</string>
