@@ -1,4 +1,4 @@
-package com.sports.sportstatistics.second
+package com.sports.sportstatistics.ui.second
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,7 +8,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.sports.sportstatistics.R
-import com.sports.sportstatistics.ThirdActivity
+import com.sports.sportstatistics.ui.third.ThirdActivity
 
 class SecondActivity : AppCompatActivity(R.layout.activity_second) {
 
